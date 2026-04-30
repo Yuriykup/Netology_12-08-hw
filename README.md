@@ -125,7 +125,7 @@ crontab -e
 
 - С использованием опции `--incremental-base`. 
 Эта опция позволяет не отслеживать значения LSN между резервными копиями. 
-Можно запросить у `mysqlbackup` значение `end_lsn` из последней успешной резервной копии (не TTS), записанной в таблице `backup_history` на сервере, используя `--incremental-base=history:last_backup` или `history:last_full_backup` (для версий 8.0.17 и позже).
+Можно запросить у `mysqlbackup` значение `end_lsn` из последней успешной резервной копии (не TTS), записанной в таблице `backup_history` на сервере, используя `--incremental-base=history:last_backup` или `history:last_full_backup`.
 
 Пример команды:
 ```
